@@ -15,6 +15,7 @@ public class Main {
         try (SqlSession session = sqlSessionFactory.openSession(true)) {
             TestMapper mapper = session.getMapper(TestMapper.class);
             Student student = mapper.getStudentById(1 );
+            System.out.println(1);
         }
 
     }
